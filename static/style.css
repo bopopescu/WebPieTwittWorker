@@ -1,0 +1,35 @@
+a, h1, h2       { 
+	color: #33CCCC; 
+}
+
+html, body, #map-canvas { 
+	height: 100%; margin: 0; padding: 0;
+}
+
+#parent {
+    overflow: hidden;
+    border: 1px solid red
+}
+.right {
+    float: right;
+    width: 500px;
+    height: 400px;
+    background: #888;
+}
+.left {
+    overflow: hidden;
+    height: 400px;
+    background: #ccc
+}
+
+/*this is for heatmap toggle panel*/
+/*#panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }*/

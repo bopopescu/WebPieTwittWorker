@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8" />
+	<title>Pie Time - {% block title %}{% endblock %}</title>
+
+  <!-- link for page css -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='style.css')}}" />
+
+  <!-- link for page favicon -->
+  <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">  	 -->
+  <link rel="shortcut icon" href="http://png-2.findicons.com/files/icons/1183/thanksgiving_2009/256/pumpkin_pie.png">   
+
+  <!-- js for gooogle map -->
+  <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+  <script type="text/javascript">
+  		$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	</script>
+  
+</head>
+<body>
+
+{% block body %}{% endblock %}
+<script type="text/javascript">
+    function change_url(val) {
+        window.location=val;
+    }
+</script>
+
+
+
+</body>
+</html>

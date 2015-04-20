@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}Home Sweet Home{% endblock %}
+
+{% block body %}
+<h1>Welcome to PieTwitt</h1>
+
+</br>
+</br>
+
+<p>Click the button to select the keyword you would like to view.</p>
+
+<select id="dynamic_select" onchange="change_url(this.value);">
+	<option value="" selected>--Choose Keyword--</option>
+	<option value="{{ url_for('displayMap', keywords = 'weather')}}">#Weather</option>
+</select>
+
+{% endblock %}

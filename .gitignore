@@ -1,0 +1,12 @@
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5266be3613600beafc42907fe2dd2c365ac036b5
+=======
+>>>>>>> 7f1b8ac5a35cc4e4a7f18e66aabdea1b53f11958
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
