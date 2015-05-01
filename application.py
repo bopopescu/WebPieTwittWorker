@@ -28,6 +28,7 @@ def index():
 @application.route('/map/<keywords>')
 def displayMap(keywords):
 	# allTweets = []
+	global  finalList
 	print "finalList = ", finalList
 
 	return flask.render_template('map.html', keywords=keywords, allTweets = finalList)
